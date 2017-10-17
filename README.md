@@ -29,6 +29,8 @@ API Gatewayを設定
 * DialogflowのFulfillmentのWebhookにURLを設定
 * IntegrationでGoogle Assistantを有効に。Welcome Intentにmain.jsonのintent、残り２つをAdditional triggering intentsに設定。Update Draft実行。
 
+このへんのimport作業は動作確認してません。
+
 ## 動作確認
 
 * Google Homeに「OK Google, テスト用アプリに繋いで」
