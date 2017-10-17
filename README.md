@@ -6,7 +6,6 @@
 go run server.go
 ngrok http 9090
 
-DialogflowのFulfillmentのWebhookにURLを設定
 ```
 
 AWS Lambda
@@ -26,7 +25,7 @@ API Gatewayを設定
 
 * Entitiesにdialogflow/entitiesのjsonをそれぞれ設定
 * Intentsにdialogflow/intentsのjsonをそれぞれ設定
-* DialogflowのFulfillmentのWebhookにURLを設定
+* DialogflowのFulfillmentのWebhookにngrokやAPI Gatewayで作成したURLを設定
 * IntegrationでGoogle Assistantを有効に。Welcome Intentにmain.jsonのintent、残り２つをAdditional triggering intentsに設定。Update Draft実行。
 
 このへんのimport作業は動作確認してません。
