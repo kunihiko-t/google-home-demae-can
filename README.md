@@ -32,7 +32,7 @@ API Gatewayを設定
 
 ## 動作確認
 
-* Google Homeに「OK Google, テスト用アプリに繋いで」
+* Google Homeに「OK Google, テスト用アプリに繋いで」と話しかける
 
 * アプリが起動するので会話する
 
