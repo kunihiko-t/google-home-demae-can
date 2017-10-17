@@ -1,0 +1,48 @@
+{
+  "id": "0de5d250-4199-45ff-8070-ef4eeb395f97",
+  "name": "一番早いのは",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "fastest",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508229262,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "c6664394-b2f6-41d3-b117-f9fd9f4df3bc",
+      "data": [
+        {
+          "text": "一番早いのは？"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

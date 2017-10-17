@@ -1,0 +1,36 @@
+{
+  "id": "59f5475f-6d46-429c-a453-ae1df07a0b01",
+  "name": "myentity",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "もつ鍋",
+      "synonyms": [
+        "もつ鍋"
+      ]
+    },
+    {
+      "value": "インドカレー",
+      "synonyms": [
+        "インドカレー"
+      ]
+    },
+    {
+      "value": "ココイチ",
+      "synonyms": [
+        "ココイチ",
+        "ここいち"
+      ]
+    },
+    {
+      "value": "中華",
+      "synonyms": [
+        "中華",
+        "ちゅうか",
+        "中華料理"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

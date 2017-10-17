@@ -1,0 +1,40 @@
+{
+  "event":{
+    "id": "b14496ce-271b-4e87-8739-e384776c31c2",
+    "timestamp": "2017-10-17T03:26:56.092Z",
+    "lang": "ja",
+    "result": {
+      "source": "agent",
+      "resolvedQuery": "もつ鍋何分で来る？",
+      "action": "send_message",
+      "actionIncomplete": false,
+      "parameters": {
+        "genre": "もつ鍋"
+      },
+      "contexts": [],
+      "metadata": {
+        "intentId": "f8431b33-c969-49a1-b3e5-8a89d8c2c404",
+        "webhookUsed": "true",
+        "webhookForSlotFillingUsed": "false",
+        "intentName": "出前館"
+      },
+      "fulfillment": {
+        "speech": "",
+        "messages": [
+          {
+            "type": 0,
+            "id": "869fe78c-8a53-470e-b00a-19d0eccead06",
+            "speech": ""
+          }
+        ]
+      },
+      "score": 1
+    },
+    "status": {
+      "code": 206,
+      "errorType": "partial_content",
+      "errorDetails": ""
+    },
+    "sessionId": ""
+  }
+  }

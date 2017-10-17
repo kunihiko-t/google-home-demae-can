@@ -1,0 +1,86 @@
+{
+  "id": "f8431b33-c969-49a1-b3e5-8a89d8c2c404",
+  "name": "出前館",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "genre",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "1e8b9347-e5d9-4390-beec-6c6eb82802b8",
+          "dataType": "@myentity",
+          "name": "genre",
+          "value": "$genre",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": false
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1508221698,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
+    }
+  ],
+  "userSays": [
+    {
+      "id": "661935d6-0817-48d0-aa5c-8c5eeca879de",
+      "data": [
+        {
+          "text": "もつ鍋",
+          "alias": "genre",
+          "meta": "@myentity",
+          "userDefined": true
+        },
+        {
+          "text": "は？"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1508216769,
+      "isAuto": false
+    },
+    {
+      "id": "47bcea51-9c70-406a-9aa6-bd9d2faab8e3",
+      "data": [
+        {
+          "text": "もつ鍋",
+          "alias": "genre",
+          "meta": "@myentity",
+          "userDefined": true
+        },
+        {
+          "text": "は何分待ち？"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1508210895,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
