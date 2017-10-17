@@ -6,6 +6,11 @@
 go run server.go
 ngrok http 9090
 
+# or 
+
+docker-compose up
+ngrok http 9090
+
 ```
 
 AWS Lambda

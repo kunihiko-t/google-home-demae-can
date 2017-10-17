@@ -1,0 +1,14 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - "9090:9090"
+    command: bash -c "go get && go-wrapper run server.go"
+    environment:
+      - GOPATH=/
+    volumes:
+      - .:/src/github.com/kunihiko-t/google-home-demae-can
+    working_dir: "/src/github.com/kunihiko-t/google-home-demae-can"

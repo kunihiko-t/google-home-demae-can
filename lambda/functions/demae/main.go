@@ -149,7 +149,6 @@ func getFastest() *Site {
 			if err == nil {
 				site.Time = &tempT
 			}
-			fmt.Println(site)
 		}(&siteList[i])
 	}
 	wg.Wait()
@@ -194,8 +193,6 @@ func init() {
 func main() {
 	apex.HandleFunc(func(event json.RawMessage, ctx *apex.Context) (interface{}, error) {
 
-		fmt.Printf("%+v\n", event)
-
 		var res Speech
 		var d DialogFlowRequest
 		if err := json.Unmarshal(event, &d); err != nil {
@@ -204,15 +201,14 @@ func main() {
 			return res, err
 		}
 
-		fmt.Printf("%+v\n", d)
 		//Which is the fastest?
 		if d.Result.Action == "fastest" {
 			fastest := getFastest()
 			res := Speech{Speech: fmt.Sprintf("１番早いのは%vで%v分です", fastest.Name, *fastest.Time)}
-			fmt.Printf("%+v\n", res)
 			return res, nil
 		}
 
+		//Fetch waiting time by genre
 		genre := d.Result.Parameters.Genre
 		res = getResultByGenre(genre)
 		return res, nil

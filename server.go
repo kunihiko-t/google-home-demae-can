@@ -194,6 +194,8 @@ func (h *IndexHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(&res)
 		return
 	}
+
+	//Fetch waiting time by genre
 	genre := d.Result.Parameters.Genre
 	res := getResultByGenre(genre)
 	pp.Println(res)
@@ -238,7 +240,6 @@ func getFastest() *Site {
 			if err == nil {
 				site.Time = &tempT
 			}
-			fmt.Println(site)
 		}(&siteList[i])
 	}
 	wg.Wait()
