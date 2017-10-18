@@ -217,7 +217,7 @@ func getResultByGenre(genre string) (res Speech) {
 			result, err = checkDeliveryTime(s.URL)
 		}
 	}
-	if result == 0 {
+	if err == nil && result == 0 {
 		res = Speech{Speech: fmt.Sprintf("%vは登録されていません。", genre)}
 		return res
 	}
